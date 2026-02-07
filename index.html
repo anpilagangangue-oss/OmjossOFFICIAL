@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMJOSS | Official Partnership</title>
+    
+    <meta property="og:title" content="OMJOSS - EXCLUSIVE PARTNER">
+    <meta property="og:image" content="https://unrivaled-parfait-0e742a.netlify.app/banner.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cyan: #00f3ff;
+            --pink: #ff00ff;
+            --gold: #ffd700;
+            --bg: #050507;
+            --glass: rgba(0, 243, 255, 0.03);
+            --border: rgba(0, 243, 255, 0.15);
+        }
+
+        body {
+            background: var(--bg);
+            color: #fff; font-family: 'Rajdhani', sans-serif;
+            margin: 0; overflow-x: hidden; min-height: 100vh;
+            display: flex; justify-content: center;
+        }
+
+        #bg-parallax {
+            position: fixed; top: 0; left: 0; width: 110%; height: 110%;
+            background: linear-gradient(rgba(5, 5, 7, 0.8), rgba(5, 5, 7, 0.9)), url('bg.jpg') center/cover;
+            z-index: -1; transition: transform 0.1s ease-out;
+        }
+
+        .container {
+            width: 100%; max-width: 420px; padding: 40px 20px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .header { text-align: center; margin-bottom: 40px; }
+        .avatar-box {
+            position: relative; width: 100px; height: 100px; margin: 0 auto;
+        }
+        .avatar {
+            width: 100%; height: 100%; border-radius: 20px;
+            object-fit: cover; border: 2px solid var(--cyan);
+            transform: rotate(-3deg);
+        }
+
+        /* STEP UI */
+        .step-content { width: 100%; display: none; animation: slideIn 0.4s ease; }
+        .step-active { display: block; }
+        @keyframes slideIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+
+        .cyber-box {
+            background: var(--glass); border: 1px solid var(--border);
+            border-radius: 20px; padding: 25px; backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .main-btn {
+            width: 100%; background: transparent; border: 1px solid var(--cyan);
+            color: var(--cyan); padding: 15px; border-radius: 12px;
+            font-family: 'Orbitron'; font-size: 0.8rem; cursor: pointer;
+            margin-top: 20px; transition: 0.3s; text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .main-btn:hover { background: var(--cyan); color: #000; box-shadow: 0 0 20px var(--cyan); }
+
+        .donate-btn {
+            display: block; width: 100%; background: var(--gold);
+            color: #000; text-align: center; padding: 18px;
+            border-radius: 12px; text-decoration: none; font-family: 'Orbitron';
+            font-weight: 900; box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            margin-top: 15px;
+        }
+
+        .link-card {
+            background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+            padding: 15px; border-radius: 12px; display: flex; align-items: center;
+            margin-bottom: 12px; text-decoration: none; color: #fff; transition: 0.3s;
+        }
+        .link-card:hover { border-color: var(--cyan); transform: translateX(10px); }
+        .icon-circle { width: 40px; height: 40px; background: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; border: 1px solid var(--cyan); }
+
+        footer { margin-top: 50px; text-align: center; font-size: 0.6rem; letter-spacing: 3px; opacity: 0.4; }
+    </style>
+</head>
+<body>
+
+    <div id="bg-parallax"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="avatar-box"><img src="profil.jpg" class="avatar"></div>
+            <h1 style="font-family: 'Orbitron'; font-size: 1.4rem; margin-top: 25px; letter-spacing: 2px;">OMJOSS ELITE</h1>
+            <p style="font-size: 0.7rem; color: var(--cyan); letter-spacing: 3px;">VERIFIED PARTNERSHIP</p>
+        </header>
+
+        <div id="step1" class="step-content step-active">
+            <div class="cyber-box" style="border-color: var(--gold);">
+                <h2 style="font-family: 'Orbitron'; color: var(--gold); font-size: 0.9rem; margin-bottom: 10px;">👑 SUPPORTER PRIVILEGE</h2>
+                <p style="font-size: 0.8rem; opacity: 0.8; line-height: 1.5;">Sebelum mengakses terminal utama, tunjukkan dukunganmu sebagai bagian dari komunitas OmJoss Gaming.</p>
+                <a href="https://sociabuzz.com/omjosss/tribe" class="donate-btn">KIRIM DUKUNGAN</a>
+            </div>
+            <button class="main-btn" onclick="goStep(2)"> INFO SEPUTAR POINTBLANK &rsaquo;</button>
+        </div>
+
+        <div id="step2" class="step-content">
+            <div class="cyber-box">
+                <h2 style="font-family: 'Orbitron'; font-size: 0.85rem; color: var(--cyan); margin-bottom: 15px;">PARTNER AUTHORIZATION</h2>
+                <p style="font-size: 0.85rem; line-height: 1.6;">
+                    Gua bekerja sama secara resmi dengan <b>NEOGAME.ID</b> untuk memberikan akses khusus bagi para Trooper.
+                </p>
+                <div style="font-size: 0.75rem; margin-top: 15px; padding: 10px; background: rgba(0,0,0,0.4); border-radius: 10px;">
+                    🟢 <span style="color: var(--cyan);">Official Sponsor:</span> Neogame Indonesia<br>
+                    🟢 <span style="color: var(--cyan);">Security:</span> 100% Verified Account<br>
+                    🟢 <span style="color: var(--cyan);">Privilege:</span> Priority Processing
+                </div>
+            </div>
+            <button class="main-btn" onclick="goStep(3)">BUKA AKSES LAYANAN &rsaquo;</button>
+        </div>
+
+        <div id="step3" class="step-content">
+            <div class="link-list">
+                <a href="https://neogame.id/?codx=keongracunsss_" class="link-card">
+                    <div class="icon-circle">💎</div>
+                    <div><b>SPECIAL ACCESS: CASH PB</b><br><span style="font-size: 0.6rem; opacity: 0.5;">RESELLER PRICE BY NEOGAME</span></div>
+                </a>
+                <a href="https://neogame.id/games/joki-pb?codx=keongracunsss_" class="link-card">
+                    <div class="icon-circle">⚔️</div>
+                    <div><b>ELITE JOKI SERVICE</b><br><span style="font-size: 0.6rem; opacity: 0.5;">PRO PLAYER DEPLOYMENT</span></div>
+                </a>
+                <a href="https://neogame.id/games/char-point-blank-zepetto?codx=keongracunsss_" class="link-card">
+                    <div class="icon-circle">🎖️</div>
+                    <div><b>PRIVATE MARKET CHAR</b><br><span style="font-size: 0.6rem; opacity: 0.5;">LIMITED ACCOUNT STOCK</span></div>
+                </a>
+            </div>
+            <button class="main-btn" onclick="goStep(1)" style="border-color: #333; color: #666;">KEMBALI KE GERBANG</button>
+        </div>
+
+        <footer>&copy; 2026 OMJOSS x NEOGAME COLLABORATION</footer>
+    </div>
+
+    <script>
+        function goStep(n) {
+            document.querySelectorAll('.step-content').forEach(s => s.classList.remove('step-active'));
+            document.getElementById('step'+n).classList.add('step-active');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        document.addEventListener('mousemove', (e) => {
+            const bg = document.getElementById('bg-parallax');
+            const x = (window.innerWidth / 2 - e.pageX) / 40;
+            const y = (window.innerHeight / 2 - e.pageY) / 40;
+            bg.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>
